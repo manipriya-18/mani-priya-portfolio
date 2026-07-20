@@ -67,7 +67,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 23px; /* Upscaled standard typography base to 23px for full legibility */
+  font-size: 16px; /* Standard base typography size */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1377,6 +1377,10 @@ footer .footer-logo span {
 
 /* Up to Tablet View */
 @media (max-width: 1024px) {
+  html {
+    font-size: 15px; /* Scale root down for tablet viewports */
+  }
+
   body {
     font-size: 15px;
   }
@@ -1387,6 +1391,16 @@ footer .footer-logo span {
   
   .hero-title {
     font-size: 3.2rem;
+  }
+
+  .avatar-frame {
+    width: 340px;
+    height: 340px;
+  }
+  
+  .avatar-img-container {
+    width: 320px;
+    height: 320px;
   }
   
   .about-grid {
@@ -1415,6 +1429,14 @@ footer .footer-logo span {
 
 /* Up to Phablet/Mobile Horizontal */
 @media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Scale root down for mobile viewports */
+  }
+
+  .section {
+    padding: 5rem 0 3rem 0; /* Clearer margins on mobile devices */
+  }
+
   .navbar {
     height: 70px;
     padding: 0 1.5rem;
