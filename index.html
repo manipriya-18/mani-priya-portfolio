@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mani Priya Koppula | Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Professional portfolio of Mani Priya Koppula, a full-stack developer specializing in React, Node.js, Spring Boot, and database systems. View projects, skills, and resume.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Header / Navigation -->
+  <header>
+    <div class="navbar container">
+      <div class="logo">
+        <a href="#home"><i class="fa-solid fa-terminal" style="font-size: 1.5rem; color: var(--accent-cyan);"></i></a>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Certifications & Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 1.2rem;">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-wrapper">
+        <div class="hero-content">
+          <span class="hero-subtitle">Welcome to my Professional Portfolio</span>
+          <h1 class="hero-title">Hi, I'm <span>Koppula Mani Priya</span></h1>
+          <div class="hero-typing">
+            I am a <span class="typed-text"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-desc">
+            An Information Technology student and passionate Backend Engineer. I specialize in building scalable REST APIs, responsive full-stack applications, and secure systems using Java, React, and Node.js.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">Check My Work <i class="fa-solid fa-arrow-down"></i></a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch <i class="fa-solid fa-paper-plane"></i></a>
+          </div>
+        </div>
+        
+        <div class="hero-avatar">
+          <div class="avatar-frame">
+            <div class="avatar-blob"></div>
+            <div class="avatar-img-container">
+              <img src="assets/profile.jpg" alt="Mani Priya Koppula">
+            </div>
+            <div class="avatar-badge glass">
+              <i class="fa-solid fa-code"></i>
+              <div class="badge-text">Full-Stack<br>Developer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section glass reveal">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-details">
+            <p>
+              I completed my B.Tech in Information Technology at Usha Rama College of Engineering and Technology (2022–2026). Over the course of my academic journey, I focused on solving real-world challenges by building clean and resilient full-stack systems.
+            </p>
+            <p>
+              Having worked on scalable REST APIs and real-time database interfaces, I value robust software architectural designs. My hands-on background spans Java Spring Boot, React.js, Python, Flask, Node.js, and database indexing (MySQL and PostgreSQL). I enjoy collaborating in Agile environments to optimize query and module performance.
+            </p>
+            <div class="about-btns" style="display: flex; gap: 1rem;">
+              <a href="assets/Job_Resume.pdf" target="_blank" class="btn btn-primary"><i class="fa-solid fa-file-invoice"></i> View Resume</a>
+              <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Message Me</a>
+            </div>
+            
+            <div class="about-stats">
+              <div class="stat-item glass">
+                <span class="stat-num">9.28</span>
+                <span class="stat-label">B.Tech GPA</span>
+              </div>
+              <div class="stat-item glass">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Silver Medals</span>
+              </div>
+              <div class="stat-item glass">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Tech Skills</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-cards">
+            <h3>Academic Background</h3>
+            
+            <div class="edu-card glass">
+              <div class="edu-year"><i class="fa-solid fa-calendar-days"></i> 2022 - 2026</div>
+              <div class="edu-degree">B.Tech, Information Technology</div>
+              <div class="edu-school">Usha Rama College of Engineering and Technology, Telaprolu</div>
+              <div class="edu-gpa"><i class="fa-solid fa-graduation-cap"></i> GPA: 9.28</div>
+            </div>
+
+            <div class="edu-card glass">
+              <div class="edu-year"><i class="fa-solid fa-calendar-days"></i> 2020 - 2022</div>
+              <div class="edu-degree">Intermediate (MPC)</div>
+              <div class="edu-school">Sri Chaitanya Junior College, Gudivada</div>
+              <div class="edu-gpa"><i class="fa-solid fa-star"></i> GPA: 9.0</div>
+            </div>
+
+            <div class="edu-card glass">
+              <div class="edu-year"><i class="fa-solid fa-calendar-days"></i> 2019 - 2020</div>
+              <div class="edu-degree">SSC</div>
+              <div class="edu-school">Triveni Public School, Gudivada</div>
+              <div class="edu-gpa"><i class="fa-solid fa-award"></i> GPA: 9.8</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <div class="timeline-date">06/2025 – 03/2026</div>
+              <h3 class="timeline-role">Intern - Python Full Stack Developer</h3>
+              <h4 class="timeline-company">Edubot Software and Solutions | Vijayawada, India</h4>
+              <ul class="timeline-list">
+                <li>Engineered and maintained robust full-stack modules using Spring Boot and React, resolving frontend-backend API integration challenges.</li>
+                <li>Designed and delivered RESTful APIs for student performance trackers with secure role-based access tokens.</li>
+                <li>Optimized database queries and custom indexing strategies on MySQL, improving application response time.</li>
+                <li>Collaborated in an Agile ecosystem of 5+ developers, participating in sprint reviews, planning, and design discussions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section glass reveal">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        
+        <div class="skills-tabs">
+          <button class="tab-btn active" onclick="filterSkills('all')">All Skills</button>
+          <button class="tab-btn" onclick="filterSkills('programming')">Languages</button>
+          <button class="tab-btn" onclick="filterSkills('backend')">Backend</button>
+          <button class="tab-btn" onclick="filterSkills('frontend')">Frontend</button>
+          <button class="tab-btn" onclick="filterSkills('databases')">Databases</button>
+          <button class="tab-btn" onclick="filterSkills('tools')">Tools</button>
+        </div>
+
+        <div class="skills-content" id="skillsContent">
+          <!-- Programming -->
+          <div class="skill-card glass" data-category="programming">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Python</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="90%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skill-card glass" data-category="programming">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-java"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Java / OOPs</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="85%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skill-card glass" data-category="programming">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">TypeScript</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="75%"></div></div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card glass" data-category="backend">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-node-js"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Node.js / Express</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skill-card glass" data-category="backend">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-server"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">RESTful APIs</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="90%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skill-card glass" data-category="backend">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-gears"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Flask / Spring Boot</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="80%"></div></div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card glass" data-category="frontend">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-react"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">React.js</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="85%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skill-card glass" data-category="frontend">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">HTML5 / Semantic UI</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="90%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skill-card glass" data-category="frontend">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">CSS3 / Flex / Grid</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="85%"></div></div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card glass" data-category="databases">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-database"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">MySQL Query Indexing</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="85%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skill-card glass" data-category="databases">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-table"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">PostgreSQL</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="78%"></div></div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card glass" data-category="tools">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-git-alt"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Git & GitHub</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="85%"></div></div>
+            </div>
+          </div>
+          
+          <div class="skill-card glass" data-category="tools">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-chrome"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Postman / DevTools</div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percent="85%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Projects Showcase</h2>
+        <div class="portfolio-grid">
+          
+          <!-- Project 1 -->
+          <div class="portfolio-card glass">
+            <div class="project-cover">
+              <img src="assets/blood_donation.png" alt="Blood Management Portal" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="project-badge badge-violet">MySQL Optimization</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Blood Management Portal</h3>
+              <p class="project-desc">
+                Engineered a centralized web platform to streamline donor-recipient connectivity. Optimized search and retrieval workflows for 500+ records using MySQL custom indexing and filters, resulting in immediate blood type matching response times.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Query Indexing</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/manipriya-18/Blood-Donation.git" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Code</a>
+                <a href="#contact" class="project-link"><i class="fa-solid fa-laptop-code"></i> Request Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="portfolio-card glass">
+            <div class="project-cover">
+              <img src="assets/hospital_appointment.png" alt="MediConnect Portal" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="project-badge badge-cyan">Full-Stack EHR</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">MediConnect (EHR) Portal</h3>
+              <p class="project-desc">
+                Developed a responsive patient health record portal specializing in automated appointment bookings and patient log tracking. Designed a mobile-first UI with React.js that achieved maximum responsive compatibility.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">API Integration</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/manipriya-18/hospital-appointment-system.git" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Code</a>
+                <a href="#contact" class="project-link"><i class="fa-solid fa-laptop-code"></i> Request Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Online Complaint Portal -->
+          <div class="portfolio-card glass">
+            <div class="project-cover">
+              <img src="assets/complaint_portal.png" alt="Online Complaint Portal" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="project-badge badge-emerald">Workflow Automation</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Online Complaint Portal</h3>
+              <p class="project-desc">
+                Developed an online complaint registration state machine tracking portal. Designed roles-based security for authority review and priority automated complaint sorting pathways, reducing workflow friction and escalations.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">JSP / Servlet</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/manipriya-18/online-complaint-portal.git" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Code</a>
+                <a href="#contact" class="project-link"><i class="fa-solid fa-laptop-code"></i> Request Demo</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Awards Section -->
+    <section id="achievements" class="section glass reveal">
+      <div class="container certs-awards-grid">
+        <!-- Certifications Column -->
+        <div>
+          <h3 class="column-title"><i class="fa-solid fa-stamp"></i> Certifications</h3>
+          <div class="certs-list">
+            
+            <div class="cert-card glass">
+              <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+              <div>
+                <h4 class="cert-title">Python Full Stack Developer Internship</h4>
+                <p class="cert-school">EDUSKILLS Virtual Academy</p>
+                <span class="cert-badge">Credentials Issued</span>
+              </div>
+            </div>
+
+            <div class="cert-card glass">
+              <div class="cert-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div>
+                <h4 class="cert-title">Employability Skill Job Ready Program</h4>
+                <p class="cert-school">WADHWANI Foundation</p>
+                <span class="cert-badge">Verified Internship</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Awards Column -->
+        <div>
+          <h3 class="column-title"><i class="fa-solid fa-trophy"></i> Major Awards</h3>
+          <div class="awards-list">
+            
+            <div class="award-card glass">
+              <div class="award-icon"><i class="fa-solid fa-medal"></i></div>
+              <div>
+                <h4 class="award-title">Academic Excellence</h4>
+                <p class="award-desc">Awarded 3 Silver Medals as an Academic Topper at Usha Rama College.</p>
+              </div>
+            </div>
+
+            <div class="award-card glass">
+              <div class="award-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <div>
+                <h4 class="award-title">Technical Event Coordinator</h4>
+                <p class="award-desc">Orchestrated college symposiums & events coordinate logistics for 500+ attendees.</p>
+              </div>
+            </div>
+
+            <div class="award-card glass">
+              <div class="award-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+              <div>
+                <h4 class="award-title">Sports Management Head</h4>
+                <p class="award-desc">Led team-building modules and organized inter-college sports championships.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          
+          <div class="contact-info">
+            <h3 class="contact-title" style="font-size: 1.8rem;">Let's Connect!</h3>
+            <p class="contact-tagline">Feel free to message me to request a demo of my projects, check my codes, discuss internship openings, or suggest collaborations.</p>
+            
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="contact-text-label">Email Me</div>
+                  <a href="mailto:manipriyakoppula@gmail.com" class="contact-text-value">manipriyakoppula@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="contact-text-label">Call Me</div>
+                  <a href="tel:8247369507" class="contact-text-value">8247369507</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="contact-text-label">Location</div>
+                  <span class="contact-text-value">Gudivada, Andhra Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://linkedin.com/in/mani-priya-koppula" target="_blank" class="social-icon" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/mani-priya-koppula" target="_blank" class="social-icon" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form glass" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <input type="text" id="name" placeholder=" " required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder=" " required>
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder=" " required></textarea>
+              <label for="message">Message Details</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 12px;">Send Message <i class="fa-solid fa-paper-plane" style="margin-left: 0.5rem;"></i></button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footers -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">Koppula Mani Priya</div>
+      <p>&copy; 2026 Koppula Mani Priya. All rights reserved.</p>
+      <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-muted);">Designed and developed with customized micro-animations & glassmorphic styling.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div class="toast-msg" id="toastMsg">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Message delivered successfully!</span>
+  </div>
+
+  <!-- Scroll To Top -->
+  <div class="scroll-top" id="scrollTop" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
